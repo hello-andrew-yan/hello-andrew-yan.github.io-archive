@@ -1,0 +1,39 @@
+html {
+    background-color: #131313;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+    background-color: #151515;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-wrapper h1 {
+    text-align: center;
+    width: 300px;
+    font-size: 60px;
+    margin: 0;
+}
+
+.stretch {
+    display: block;
+    font-size: 130px;
+}
+
+.description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.description-wrapper b {
+    font-size: 20px;
+}
