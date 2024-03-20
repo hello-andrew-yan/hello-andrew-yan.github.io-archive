@@ -6,7 +6,7 @@ import Navigation from './components/navigation/Navigation.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <div><Navigation></Navigation></div>
+    <Navigation/>
     <div className="title-main"><Title/></div>
   </React.StrictMode>
 )
