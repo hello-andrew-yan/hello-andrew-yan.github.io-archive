@@ -10,15 +10,16 @@
     margin: 0;
     font-size: 30px;
     color: #292929;
+    /* text-shadow: 0px 150px 10px #cecabe; */
 }
 
 @keyframes title-ease {
     from {
-        margin: 100px;
+        margin-top: 100px;
         opacity: 0%;
     }
     to {
-        margin: 200px;
+        margin-top: 200px;
         opacity: 100%;
     }
 }
