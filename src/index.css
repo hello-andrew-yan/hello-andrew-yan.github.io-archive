@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: #FFFBED;
+}
+
+.title-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.pink {
+    color: #FC7998 !important;
+}

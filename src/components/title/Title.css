@@ -1,0 +1,25 @@
+.title-container {
+    width: 500px;
+    animation: title-ease 1s ease-in-out forwards;
+}
+
+.title-container h2 {
+    font-family: "Oswald";
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
+    font-size: 30px;
+    color: #292929;
+}
+
+@keyframes title-ease {
+    from {
+        margin: 100px;
+        opacity: 0%;
+    }
+    to {
+        margin: 200px;
+        opacity: 100%;
+    }
+}
+
