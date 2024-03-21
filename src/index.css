@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    animation: title-ease 1s ease-in-out forwards;
 }
 
 .bold {
@@ -15,4 +17,16 @@ body {
 
 .pink {
     color: #FC7998 !important;
+}
+
+
+@keyframes title-ease {
+    from {
+        padding-top: 100px;
+        opacity: 0%;
+    }
+    to {
+        padding-top: 200px;
+        opacity: 100%;
+    }
 }
