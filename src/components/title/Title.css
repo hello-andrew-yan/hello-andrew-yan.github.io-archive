@@ -11,4 +11,11 @@
     color: #292929;
 }
 
+.title-container a {
+    text-decoration: none;
+    transition: .3s ease-in;
+}
 
+.title-container a:hover {
+    color: #f75178 !important;
+}

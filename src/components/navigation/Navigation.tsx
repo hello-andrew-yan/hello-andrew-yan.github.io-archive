@@ -4,7 +4,7 @@ import '../../index.css'
 export default function Navigation() {
     return (
         <nav className="navigation-bar">
-            <a href="" className="logo">:D</a>
+            <a href="" className="logo">A</a>
             <ul className="navigation-menu">
                 <li className="navigation-element about">
                     <a href="">ABOUT</a>
@@ -18,6 +18,7 @@ export default function Navigation() {
                 <li className="navigation-element contact">
                     <a href="">CONTACT</a>
                 </li>
+                <hr />
             </ul>
         </nav>
     )
