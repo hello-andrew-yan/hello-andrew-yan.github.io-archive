@@ -1,4 +1,31 @@
-.title-main {
+.background-container {
+    position: absolute;
+    width: 100%;
+    top: -25%;
+    opacity: 5%;
+    z-index: 10;
+}
+
+.background-container h1 {
+    text-align: center;
+    font-size: 500px;
+    /* text-shadow: 0 10px 5px #292929; */
+}
+
+@keyframes title-ease {
+    from {
+        padding-top: 0px;
+        opacity: 0%;
+    }
+    to {
+        padding-top: 20%;
+        opacity: 100%;
+    }
+}
+
+.title-container {
+    z-index: 100;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,26 +33,11 @@
     animation: title-ease 1s ease-in-out forwards;
 }
 
-
-@keyframes title-ease {
-    from {
-        padding-top: 100px;
-        opacity: 0%;
-    }
-    to {
-        padding-top: 300px;
-        opacity: 100%;
-    }
-}
-
-.title-container {
-    width: 500px;
-}
-
 .title-container h2 {
     font-weight: 400;
     text-align: justify;
     margin: 0;
+    width: 500px;
     font-size: 30px;
     color: #292929;
 }

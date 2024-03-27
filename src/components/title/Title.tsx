@@ -3,6 +3,9 @@ import './Title.css'
 export default function Title() {
     return (
         <div className="title-main">
+            <div className="background-container">
+                <h1>ABOUT</h1>
+            </div>
             <div className="title-container">
                 <h2>
                     Hello, my name is <a className="bold pink" href="https://www.linkedin.com/in/hello-andrew-yan">Andrew</a>.
@@ -10,8 +13,8 @@ export default function Title() {
                     <span className="bold"> Sydney</span>,
                     <span className="bold"> Australia</span>.
                 </h2>
+                <img src="https://www.awesomeinventions.com/wp-content/uploads/2020/09/messy-cats-black-kitten-gets-face-covered-entirely-with-milk.png" width="200px"/>
             </div>
-            <img src="https://www.awesomeinventions.com/wp-content/uploads/2020/09/messy-cats-black-kitten-gets-face-covered-entirely-with-milk.png" width="200px"/>
         </div>
     )
 }

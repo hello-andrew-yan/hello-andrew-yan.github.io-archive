@@ -19,6 +19,7 @@
 }
 
 .scroll .logo:hover {
+    text-shadow: 0 0 3px white;
     color: #FFFBED;
 }
 
@@ -79,6 +80,7 @@
 }
 
 .logo:hover {
+    text-shadow: 0 0 3px #FC7998;
     color: #f75178;
 }
 
