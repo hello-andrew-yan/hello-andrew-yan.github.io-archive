@@ -5,12 +5,36 @@
     justify-content: space-between;
     /* Ensures the all items are vertically align. */
     align-items: center;
-    background: linear-gradient(to bottom, #FFFBED 90%, transparent 100%); 
+    background: #FFFBED; 
     /* Ensure the navbar is above other content */
     z-index: 1000;
     padding: 20px 100px 20px 100px;
     width: 100%;
+
+    transition: .5s ease;
 }
+
+.scroll {
+    background: #f75178;
+}
+
+.scroll .logo:hover {
+    color: #FFFBED;
+}
+
+.scroll .navigation-menu hr {
+    background-color: #FFFBED;
+}
+
+.scroll .navigation-menu a {
+    color: #FFFBED;
+}
+
+.scroll .navigation-element:hover ~ hr {
+    /* Optional styling choice here. */
+    background-color: #FFFBED;
+}
+
 
 .navigation-menu {
     padding: 0;
@@ -31,13 +55,13 @@
 
 .navigation-menu a {
     text-decoration: none;
-    color: #292929;
+    color: #f75178;
 }
 
 .navigation-menu hr {
     border: none;
-    transition: .3s ease-in-out;
-    background-color: #292929;
+    transition: .3s ease;
+    background-color: #f75178;
     transform: scale(0.5, 1);
     width: 25%;
     height: 2px;
