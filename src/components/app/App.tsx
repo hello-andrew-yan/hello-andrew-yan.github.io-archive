@@ -9,7 +9,7 @@ export default function App() {
     useEffect(() => {
         const handleScroll = () => {
             console.log(window.scrollY)
-            if (window.scrollY >= 400) {
+            if (window.scrollY >= 500) {
                 setIsActive(true);
             } else {
                 setIsActive(false);

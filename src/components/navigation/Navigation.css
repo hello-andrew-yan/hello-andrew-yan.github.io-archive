@@ -71,7 +71,7 @@
 .logo {
     text-decoration: none;
     transition: .3s ease-in;
-    font-family: "Italianno";
+    /* font-family: "Italianno"; */
     color: #f2eddc;
     font-size: 60px;
     font-weight: 800;

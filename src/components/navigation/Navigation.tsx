@@ -7,7 +7,7 @@ export default function Navigation() {
     useEffect(() => {
         const handleScroll = () => {
             console.log(window.scrollY)
-            if (window.scrollY >= 400) {
+            if (window.scrollY >= 500) {
                 setIsActive(true);
             } else {
                 setIsActive(false);
@@ -20,7 +20,7 @@ export default function Navigation() {
       }, []);
     return (
         <nav className={isActive ? 'navigation-bar scroll' : 'navigation-bar'} >
-            <a href="" className="logo">A</a>
+            <a href="" className="logo">⮿</a>
             <ul className="navigation-menu">
                 <li className="navigation-element about">
                     <a href="#about">ABOUT</a>
