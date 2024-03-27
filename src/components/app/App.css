@@ -1,6 +1,6 @@
 .app {
     background-color: #FFFBED;
-    transition: .5s ease;
+    transition: .3s ease-in-out;
     z-index: -500;
 }
 .scroll {

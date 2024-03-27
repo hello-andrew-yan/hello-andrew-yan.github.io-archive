@@ -10,8 +10,7 @@
     z-index: 1000;
     padding: 20px 100px 20px 100px;
     width: 100%;
-
-    transition: .5s ease;
+    transition: .3s ease-in-out;
 }
 
 .scroll {
@@ -19,7 +18,7 @@
 }
 
 .scroll .logo:hover {
-    text-shadow: 0 0 3px white;
+    /* text-shadow: 0 0 3px white; */
     color: #FFFBED;
 }
 
@@ -61,7 +60,7 @@
 
 .navigation-menu hr {
     border: none;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
     background-color: #f75178;
     transform: scale(0.5, 1);
     width: 25%;
@@ -80,7 +79,7 @@
 }
 
 .logo:hover {
-    text-shadow: 0 0 3px #FC7998;
+    /* text-shadow: 0 0 3px #FC7998; */
     color: #f75178;
 }
 

@@ -23,7 +23,7 @@ export default function Navigation() {
             <a href="" className="logo">A</a>
             <ul className="navigation-menu">
                 <li className="navigation-element about">
-                    <a href="">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li className="navigation-element projects">
                     <a href="">PROJECTS</a>

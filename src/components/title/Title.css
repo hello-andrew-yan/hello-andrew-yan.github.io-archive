@@ -2,8 +2,20 @@
     position: absolute;
     width: 100%;
     top: -25%;
-    opacity: 5%;
+    opacity: 0%;
     z-index: 10;
+    animation: background-ease 1s ease-in-out forwards;
+}
+
+@keyframes background-ease {
+    from {
+        top: -50%;
+        opacity: 0%;
+    }
+    to {
+        top: -25%;
+        opacity: 2%;
+    }
 }
 
 .background-container h1 {
