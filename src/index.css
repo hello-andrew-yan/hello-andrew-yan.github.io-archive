@@ -1,15 +1,8 @@
 html {
     scroll-behavior: smooth;
-    user-select: none;
+    background-color: #fce6a6;
 }
 body {
     font-family: "Oswald" !important;
     margin: 0;
-}
-.bold {
-    font-weight: 600 !important;
-}
-
-.pink {
-    color: #FC7998 !important;
 }

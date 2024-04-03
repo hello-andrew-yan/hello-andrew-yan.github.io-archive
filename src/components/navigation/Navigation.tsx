@@ -1,28 +1,20 @@
-import { useState, useEffect } from 'react';
 import './Navigation.css'
 import '../../index.css'
+import { useEffect } from 'react';
 
 export default function Navigation() {
-    const [isActive, setIsActive] = useState(false);
     useEffect(() => {
-        const handleScroll = () => {
-            console.log(window.scrollY)
-            if (window.scrollY >= 500) {
-                setIsActive(true);
-            } else {
-                setIsActive(false);
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
+        const listItems = document.querySelectorAll('li.navigation-element');
+        listItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add("animate-fade");
+            }, (index + 1) * 300);
+        });
+    }, []);
     return (
-        <nav className={isActive ? 'navigation-bar scroll' : 'navigation-bar'} >
-            <a href="" className="logo">⮿</a>
+        <nav className="navigation-bar">
             <ul className="navigation-menu">
-                <li className="navigation-element about">
+                <li className="navigation-element">
                     <a href="#about">ABOUT</a>
                 </li>
                 <li className="navigation-element projects">
@@ -34,7 +26,6 @@ export default function Navigation() {
                 <li className="navigation-element contact">
                     <a href="">CONTACT</a>
                 </li>
-                <hr />
             </ul>
         </nav>
     )

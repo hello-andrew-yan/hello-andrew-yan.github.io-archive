@@ -1,20 +1,36 @@
 import './Title.css'
+import { useEffect } from 'react';
 
 export default function Title() {
+    useEffect(() => {
+        let listItems = document.querySelectorAll('.title span');
+        listItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add("bounce");
+            }, (index + 1) * 500);
+        });
+
+        listItems = document.querySelectorAll('.subtitle span');
+        listItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add("bold");
+            }, (index + 1) * 500);
+        });
+    }, []);
     return (
         <div className="title-main" id="about">
-            <div className="background-container">
-                <h1>ABOUT</h1>
-            </div>
             <div className="title-container">
-                <h2>
-                    Hello, my name is <a className="bold pink" href="https://www.linkedin.com/in/hello-andrew-yan">Andrew</a>.
-                    I am a Software Engineer and Front-End Developer living in
-                    <span className="bold"> Sydney</span>,
-                    <span className="bold"> Australia</span>.
-                    Currently studying at <span className="bold">UNSW</span>.
+                <h1 className="title">
+                    <span>ANDREW</span>
+                    <span>YAN</span>
+                </h1>
+                <h2 className="subtitle">
+                    <span>Hello</span>
+                    , I am a Software Engineer and Front-End Developer living in
+                    <span> Sydney</span>,
+                    <span> Australia</span>.
+                    Currently studying at <span>UNSW</span>.
                 </h2>
-                <img src="https://www.awesomeinventions.com/wp-content/uploads/2020/09/messy-cats-black-kitten-gets-face-covered-entirely-with-milk.png" width="200px"/>
             </div>
         </div>
     )

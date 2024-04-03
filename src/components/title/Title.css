@@ -1,57 +1,30 @@
-.background-container {
-    position: absolute;
-    width: 100%;
-    top: -25%;
-    opacity: 0%;
-    z-index: 10;
-    animation: background-ease 1s ease-in-out forwards;
-}
-
-@keyframes background-ease {
-    from {
-        top: -50%;
-        opacity: 0%;
-    }
-    to {
-        top: -25%;
-        opacity: 2%;
-    }
-}
-
-.background-container h1 {
-    text-align: center;
-    font-size: 500px;
-    /* text-shadow: 0 10px 5px #292929; */
-}
-
-@keyframes title-ease {
-    from {
-        padding-top: 0px;
-        opacity: 0%;
-    }
-    to {
-        padding-top: 20%;
-        opacity: 100%;
-    }
-}
-
 .title-container {
-    z-index: 100;
+    position: relative;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px;
     animation: title-ease 1s ease-in-out forwards;
+}
+
+.title-container h1 {
+    font-size: 300px;
+    font-family: Anton;
+    text-align: center;
+    color: #d1be87;
+    background-color: #fce6a6;
+    margin: 0;
+}
+
+.title-container h1 span {
+    padding: 0 20px 0 20px;
 }
 
 .title-container h2 {
     font-weight: 400;
-    text-align: justify;
-    margin: 0;
-    width: 500px;
     font-size: 30px;
-    color: #292929;
+    text-align: center;
+    color: #a32f35;
+    width: 90%;
+    margin: 0 auto;
+
 }
 
 .title-container a {
@@ -59,6 +32,38 @@
     transition: .3s ease-in;
 }
 
-.title-container a:hover {
-    color: #f75178 !important;
+.bounce {
+    display: inline-block;
+    animation: title-bounce 1s ease-in-out forwards;
+}
+
+.bold {
+    font-weight: 600 !important;
+    font-size: 40px;
+    transition: .3s ease-in;
+}
+
+@keyframes title-ease {
+    from {
+        transform: translateY(-1000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes title-bounce {
+    50% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(3deg);
+    }
+    75% {
+        color: #d1be87;
+    }
+    100% {
+        transform: rotate(0deg);
+        color: #a32f35;
+    }
 }

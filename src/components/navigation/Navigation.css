@@ -1,132 +1,48 @@
 .navigation-bar {
-    position: fixed;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
-    /* Ensures the all items are vertically align. */
-    align-items: center;
-    background: #FFFBED; 
-    /* Ensure the navbar is above other content */
+    background-color: #fce6a6;
+
+    position: sticky;
+    top: 0px;
+    padding: 150px 0 50px 0;
+
     z-index: 1000;
-    padding: 20px 100px 20px 100px;
     width: 100%;
-    transition: .3s ease-in-out;
 }
-
-.scroll {
-    background: #f75178;
-}
-
-.scroll .logo:hover {
-    /* text-shadow: 0 0 3px white; */
-    color: #FFFBED;
-}
-
-.scroll .navigation-menu hr {
-    background-color: #FFFBED;
-}
-
-.scroll .navigation-menu a {
-    color: #FFFBED;
-}
-
-.scroll .navigation-element:hover ~ hr {
-    /* Optional styling choice here. */
-    background-color: #FFFBED;
-}
-
 
 .navigation-menu {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+
+    border: 3px solid #a32f35;
+    border-radius: 20px;
 }
 
 .navigation-menu li {
-    display: inline-block;
-    list-style: none;
-    text-align: center;
-    animation: navigation-ease .5s ease-in forwards;
     font-family: "Oswald";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
     opacity: 0%;
-    width: 100px;
 }
 
 .navigation-menu a {
     text-decoration: none;
-    color: #f75178;
+    color: #a32f35;
+    transition: .5s ease-in-out;
 }
 
-.navigation-menu hr {
-    border: none;
-    transition: .3s ease-in-out;
-    background-color: #f75178;
-    transform: scale(0.5, 1);
-    width: 25%;
-    height: 2px;
-    margin: 0;
-}
+/* .navigation-menu a:hover {
+    font-size: 28px;
+    transition: .5s ease-in-out;
+} */
 
-.logo {
-    text-decoration: none;
-    transition: .3s ease-in;
-    /* font-family: "Italianno"; */
-    color: #f2eddc;
-    font-size: 60px;
-    font-weight: 800;
-    margin-top: 30px;
-}
-
-.logo:hover {
-    /* text-shadow: 0 0 3px #FC7998; */
-    color: #f75178;
-}
-
-.about {
-    animation-delay: 0s !important;
-}
-.about:hover ~ hr {
-    transform: scale(0.5, 1);
-    margin-left: 0%;
-}
-
-.projects {
-    animation-delay: 0.2s !important;;
-}
-.projects:hover ~ hr {
-    transform: scale(0.725, 1);
-    margin-left: 25%;
-}
-
-.resume {
-    animation-delay: 0.4s !important;;
-}
-.resume:hover ~ hr {
-    transform: scale(0.6, 1);
-    margin-left: 50%;
-}
-
-.contact {
-    animation-delay: 0.6s !important;;
-}
-.contact:hover ~ hr {
-    transform: scale(0.65, 1);
-    margin-left: 75%;
-}
-
-.navigation-element:hover ~ hr {
-    /* Optional styling choice here. */
-    background-color: #FC7998;
-}
-
-@keyframes navigation-ease {
-    from {
-        opacity: 0%;
-        margin-top: 0px;
-    }
-    to {
-        opacity: 100%;
-        margin-top: 30px;
-    }
+.animate-fade {
+    opacity: 100% !important;
+    transition: .5s ease-in-out;
 }
