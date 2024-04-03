@@ -43,6 +43,30 @@
     transition: .3s ease-in;
 }
 
+.stroke {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -200px;
+}
+
+.path {
+    fill-opacity: 0;
+    animation: 0.5s fill 1.5s ease-in-out forwards;
+}
+@keyframes fill {
+    0% {
+        fill-opacity: 0;
+        transform: rotate(4deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        fill-opacity: 1;
+        ransform: rotate(0deg);
+    }
+}
 @keyframes title-ease {
     from {
         transform: translateY(-1000px);
