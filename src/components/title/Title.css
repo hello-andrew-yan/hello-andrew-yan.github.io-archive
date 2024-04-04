@@ -8,13 +8,14 @@
     font-size: 300px;
     font-family: Anton;
     text-align: center;
-    color: #d1be87;
-    background-color: #fce6a6;
-    margin: 0;
+    color: #fce6a6;
+    background-color: #a32f35;
+    text-shadow: 0.08em 0em #932a30;
+    margin: 0 0 50px 0;
 }
 
 .title-container h1 span {
-    padding: 0 20px 0 20px;
+    padding: 0 50px 0 50px;
 }
 
 .title-container h2 {
@@ -39,15 +40,17 @@
 
 .bold {
     font-weight: 600 !important;
-    font-size: 40px;
+    font-size: 35px;
+    color: #a32f35;
     transition: .3s ease-in;
 }
 
-.stroke {
+/* .stroke {
     width: 80%;
     display: block;
     margin: 0 auto;
-    margin-top: -200px;
+    margin-top: -210px;
+    z-index: 100;
 }
 
 .path {
@@ -64,14 +67,14 @@
     }
     100% {
         fill-opacity: 1;
-        ransform: rotate(0deg);
+        transform: rotate(0deg);
     }
-}
+} */
 @keyframes title-ease {
-    from {
+    0% {
         transform: translateY(-1000px);
     }
-    to {
+    100% {
         transform: translateY(0);
     }
 }
@@ -83,11 +86,7 @@
     70% {
         transform: rotate(3deg);
     }
-    75% {
-        color: #d1be87;
-    }
     100% {
         transform: rotate(0deg);
-        color: #a32f35;
     }
 }

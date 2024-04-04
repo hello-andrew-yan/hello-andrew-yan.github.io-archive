@@ -3,7 +3,7 @@
 
     position: sticky;
     top: 0px;
-    padding: 150px 0 20px 0;
+    padding: 150px 0 50px 0;
 
     z-index: 1000;
     width: 100%;
@@ -34,7 +34,7 @@
 .navigation-menu a {
     text-decoration: none;
     color: #a32f35;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .navigation-menu a:hover {
