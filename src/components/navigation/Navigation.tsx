@@ -8,7 +8,7 @@ export default function Navigation() {
         listItems.forEach((item, index) => {
             setTimeout(() => {
                 item.classList.add("animate-fade");
-            }, (index + 1) * 300);
+            }, (index + 1) * 200);
         });
     }, []);
     return (

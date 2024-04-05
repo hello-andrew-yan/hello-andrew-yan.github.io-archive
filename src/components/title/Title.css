@@ -14,8 +14,17 @@
     margin: 0 0 50px 0;
 }
 
-.title-container h1 span {
-    padding: 0 50px 0 50px;
+.title div {
+    display: inline-block;
+    padding: 10px 20px 0 20px;
+}
+
+.title {
+    display: block;
+}
+
+.title span {
+    padding: 0px 5px 0 5px;
 }
 
 .title-container h2 {
@@ -49,27 +58,24 @@
     width: 80%;
     display: block;
     margin: 0 auto;
-    margin-top: -210px;
     z-index: 100;
 }
 
-.path {
-    fill-opacity: 0;
-    animation: 0.5s fill 1.5s ease-in-out forwards;
+.stroke path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: 2s draw 1s ease-in-out forwards;
 }
-@keyframes fill {
-    0% {
-        fill-opacity: 0;
-        transform: rotate(4deg);
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1000;
     }
-    50% {
-        transform: rotate(-1deg);
-    }
-    100% {
-        fill-opacity: 1;
-        transform: rotate(0deg);
+    to {
+        stroke-dashoffset: 0;
     }
 } */
+
 @keyframes title-ease {
     0% {
         transform: translateY(-1000px);
@@ -81,12 +87,12 @@
 
 @keyframes title-bounce {
     50% {
-        transform: rotate(-5deg);
+        transform: rotate(-20deg) translateY(-50px);
     }
     70% {
-        transform: rotate(3deg);
+        transform: rotate(4deg) translateY(20px);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(0deg) translateY(0px);
     }
 }
