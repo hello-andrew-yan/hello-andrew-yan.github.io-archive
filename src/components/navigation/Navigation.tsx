@@ -14,17 +14,14 @@ export default function Navigation() {
     return (
         <nav className="navigation-bar">
             <ul className="navigation-menu">
-                <li className="navigation-element">
-                    <a href="#about">ABOUT</a>
-                </li>
                 <li className="navigation-element projects">
-                    <a href="">PROJECTS</a>
+                    <a href="https://github.com/hello-andrew-yan">PROJECTS</a>
                 </li>
                 <li className="navigation-element resume">
                     <a href="">RESUME</a>
                 </li>
                 <li className="navigation-element contact">
-                    <a href="">CONTACT</a>
+                    <a href="mailto:hello.andrew.yan@outlook.com">CONTACT<span className="badge">3</span></a>
                 </li>
             </ul>
         </nav>

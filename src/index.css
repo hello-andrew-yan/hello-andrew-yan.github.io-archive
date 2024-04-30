@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     background-color: #fce6a6;
+    overflow: hidden;
 }
 body {
     font-family: "Oswald" !important;
