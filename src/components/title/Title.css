@@ -15,6 +15,9 @@
     display: inline-block;
     padding: 20vh 3vw 5vh 3vw;
 }
+.title span {
+    margin: 0 0.2vw 0 0.2vw;
+}
 .subtitle {
     font-weight: 400;
     font-size: 2vw;
@@ -61,7 +64,7 @@
         font-size: 15vw;
     }
     .title div {
-        padding: 15vh 3vw 5vh 3vw;
+        padding: 15vh 5vw 5vh 5vw;
     }
     .bold {
         font-size: 3.1vw;
